@@ -18,6 +18,13 @@ def height(root):
 
 
 def height_balanced(root):
+    """
+    This is a simple if check on finding the height of a tree.
+    Everytime when a height is computed for a subtree we check for the condition.
+
+    :param root:
+    :return:
+    """
     if not root:
         return 0
 

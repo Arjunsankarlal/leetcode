@@ -4,6 +4,15 @@ https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 
 
 def max_profit(prices):
+    """
+    When a new low comes we assume it as buy and compare the profits on the next day,
+    if the profit is greater than the current max profit then we persist accordingly.
+     
+    Time Complexity : O(n)
+    Space Complexity : O(1)
+    :param prices:
+    :return:
+    """
     if len(prices) == 1:
         return 0
 
